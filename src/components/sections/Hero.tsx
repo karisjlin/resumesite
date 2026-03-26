@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowDown, Download } from 'lucide-react';
 import { ParticleBackground } from '../ui/ParticleBackground';
 import { AnimatedText } from '../ui/AnimatedText';
 import { personalInfo } from '../../data/resume';
@@ -73,6 +73,14 @@ export function Hero() {
           >
             Get In Touch
           </button>
+          <a
+            href="/KarisLinResume.pdf"
+            download
+            className="flex items-center gap-2 px-6 py-3 border border-border hover:border-cyan/60 text-muted hover:text-cyan font-medium rounded-lg transition-all duration-200 hover:bg-surface"
+          >
+            <Download size={16} />
+            Download CV
+          </a>
         </motion.div>
 
         {/* Social links */}

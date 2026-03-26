@@ -64,7 +64,7 @@ export function About() {
               { value: '9+', label: 'yrs in prod' },
               { value: '3', label: 'eng orgs' },
               { value: '$3.5M', label: 'revenue served' },
-              { value: '4', label: 'teams shipped' },
+              { value: '4', label: 'teams led' },
             ].map((stat) => (
               <div
                 key={stat.label}

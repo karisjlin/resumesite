@@ -1,10 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0a0a0f"/>
-  <text x="16" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="url(#g)" text-anchor="middle">KL</text>
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#06b6d4"/>
     </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16112b"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
   </defs>
+  <!-- Background with subtle purple tint -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Gradient border -->
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.5" fill="none" stroke="url(#grad)" stroke-width="1.5"/>
+  <!-- KL monogram in monospace with gradient -->
+  <text x="16" y="21.5" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="url(#grad)" text-anchor="middle">KL</text>
 </svg>
