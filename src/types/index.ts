@@ -7,7 +7,7 @@ export interface PersonalInfo {
   github: string;
   location: string;
   summary: string;
-  extendedSummary: string;
+  devFacts: string[];
 }
 
 export interface SkillCategory {

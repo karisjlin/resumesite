@@ -9,8 +9,15 @@ export const personalInfo: PersonalInfo = {
   github: 'https://github.com/karisjlin',
   location: 'Dallas, TX',
   summary:
-    'Software engineer with 9+ years of experience building scalable web platforms, API integrations, and eCommerce solutions. I thrive at the intersection of front-end craft and back-end architecture, leading cross-functional teams, shipping reliable code, and turning complex business requirements into elegant technical solutions.',
-  extendedSummary: 'Over the course of my career I\'ve worked across the full stack; from React and TypeScript on the front end to Node.js, REST APIs, and serverless deployments on the back end. I\'ve led distributed teams, built eCommerce platforms serving enterprise clients, and contributed to open-source tooling in the fintech space.'
+    "Full stack engineer with 9+ years shipping production code across eCommerce, fintech, and enterprise SaaS. My sweet spot is the hard integration problem: where business logic meets three incompatible APIs and someone has to make it work.",
+  devFacts: [
+    "TypeScript by default — plain JS feels incomplete at this point",
+    "I write the code and sit in the client calls",
+    "Built on Backbone.js long enough to genuinely appreciate React",
+    "Integrated APIs across ServiceNow, AWS, and Azure in the same sprint",
+    "Open-source contributor to the FDC3 Workbench (fintech interop)",
+    "Never shipped a Friday deploy and intend to keep it that way",
+  ],
   };
 
 export const skills: SkillCategory[] = [

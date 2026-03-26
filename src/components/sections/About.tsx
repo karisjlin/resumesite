@@ -19,9 +19,14 @@ export function About() {
           >
             <p className="text-muted leading-relaxed mb-6">{personalInfo.summary}</p>
 
-            <p className="text-muted leading-relaxed mb-8">
-              {personalInfo.extendedSummary}
-            </p>
+            <ul className="space-y-2.5 mb-8">
+              {personalInfo.devFacts.map((fact) => (
+                <li key={fact} className="flex items-start gap-3 text-sm text-muted">
+                  <span className="font-mono text-cyan shrink-0 mt-0.5 select-none">//</span>
+                  <span>{fact}</span>
+                </li>
+              ))}
+            </ul>
 
             {/* Education card */}
             <div className="bg-bg border border-border rounded-xl p-5 flex gap-4 items-start">
@@ -56,27 +61,34 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             {[
-              { value: '9+', label: 'Years Experience' },
-              { value: '3', label: 'Companies' },
-              { value: '$3.5M', label: 'Revenue Served' },
-              { value: '4', label: 'Teams Led' },
+              { value: '9+', label: 'yrs in prod' },
+              { value: '3', label: 'eng orgs' },
+              { value: '$3.5M', label: 'revenue served' },
+              { value: '4', label: 'teams shipped' },
             ].map((stat) => (
               <div
                 key={stat.label}
                 className="bg-bg border border-border rounded-xl p-6 flex flex-col items-center justify-center text-center card-hover"
               >
                 <span className="font-display font-bold text-3xl gradient-text mb-1">{stat.value}</span>
-                <span className="text-muted text-sm">{stat.label}</span>
+                <span className="font-mono text-muted text-xs">{stat.label}</span>
               </div>
             ))}
 
-            {/* Full-width "currently" card */}
-            <div className="col-span-2 bg-bg border border-border rounded-xl p-5">
-              <p className="font-mono text-xs text-cyan mb-2 tracking-widest uppercase">Currently</p>
-              <p className="text-text-primary font-medium">Full Stack Developer @ SpeedCast</p>
-              <p className="text-muted text-sm mt-1">
-                Building eCommerce integrations and CI/CD infrastructure for a global satellite communications company.
-              </p>
+            {/* Full-width "currently" card — terminal style */}
+            <div className="col-span-2 bg-bg border border-border rounded-xl overflow-hidden">
+              <div className="flex items-center gap-1.5 px-4 py-2 border-b border-border bg-surface">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-400/50" />
+                <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/50" />
+                <span className="w-2.5 h-2.5 rounded-full bg-green-400/50" />
+                <span className="font-mono text-xs text-muted ml-2">status.sh</span>
+              </div>
+              <div className="p-4 font-mono text-sm space-y-1">
+                <p><span className="text-violet-light">$</span> <span className="text-cyan">whoami</span></p>
+                <p className="text-text-primary pl-3">Full Stack Developer @ SpeedCast</p>
+                <p className="mt-1"><span className="text-violet-light">$</span> <span className="text-cyan">git log --oneline -1</span></p>
+                <p className="text-muted pl-3">eCommerce integrations &amp; CI/CD infrastructure</p>
+              </div>
             </div>
           </motion.div>
         </div>
