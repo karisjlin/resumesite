@@ -17,12 +17,12 @@ export function ParticleBackground() {
         fpsLimit: 60,
         particles: {
           number: { value: 55, density: { enable: true } },
-          color: { value: ['#355E3B', '#06b6d4'] },
+          color: { value: ['#a78bfa', '#06b6d4'] },
           opacity: { value: { min: 0.1, max: 0.35 } },
           size: { value: { min: 1, max: 2.5 } },
           links: {
             enable: true,
-            color: '#355E3B',
+            color: '#a78bfa',
             opacity: 0.12,
             distance: 150,
           },

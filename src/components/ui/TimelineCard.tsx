@@ -53,8 +53,8 @@ export function TimelineCard({ entry, side, index }: TimelineCardProps) {
 
         {/* Highlights */}
         <ul className="space-y-1.5 mb-4">
-          {entry.highlights.map((h, i) => (
-            <li key={i} className="text-sm text-muted flex gap-2">
+          {entry.highlights.map((h) => (
+            <li key={h} className="text-sm text-muted flex gap-2">
               <span className="text-violet mt-1 shrink-0">▸</span>
               <span>{h}</span>
             </li>

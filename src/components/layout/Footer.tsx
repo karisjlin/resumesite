@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-border py-8 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-muted text-sm font-mono">
-          Designed &amp; Built by <span className="text-violet-light">Karis Lin</span> · 2025
+          Designed &amp; Built by <span className="text-violet-light">Karis Lin</span> · {new Date().getFullYear()}
         </p>
         <div className="flex items-center gap-4">
           <a
